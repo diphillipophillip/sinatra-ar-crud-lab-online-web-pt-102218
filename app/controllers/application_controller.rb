@@ -16,8 +16,7 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/articles' do 
-   t = Article.new(title: params[:title], content: params[:content], id: params[:id]) 
-  binding.pry
+   Article.new(title: params[:title], content: params[:content])
   end
     
   
