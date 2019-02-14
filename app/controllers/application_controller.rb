@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/articles/:id' do 
-   
+   @article.update(params[:title], params[:content])
   end 
   
     
